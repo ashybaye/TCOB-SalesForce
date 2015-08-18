@@ -1,0 +1,32 @@
+// _variables.scss
+// =================
+
+@font-face {
+  font-family: 'TradeGothic-Condensed';
+  src: url('http://www.tippie.uiowa.edu/includes/fonts/LTe50535.eot'); /* IE9 Compat Modes */
+  src: url('http://www.tippie.uiowa.edu/includes/fonts/LTe50535.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('http://www.tippie.uiowa.edu/includes/fonts/TradeGothic-Condensed.woff') format('woff'), /* Modern Browsers */
+  url('http://www.tippie.uiowa.edu/includes/fonts/TradeGothic-Condensed.ttf')  format('truetype'), /* Safari, Android, iOS */
+  url('http://www.tippie.uiowa.edu/includes/fonts/TradeGothic-Condensed.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-style: normal;
+}
+
+$font-google-prim : 'http://fonts.googleapis.com/css?family=Lato:100,300,400';
+@if variable-exists(font-google-prim) {
+  @import url($font-google-prim);
+}
+/* COLORS */
+$gold         :#e8a713;
+$ui-gold      :#ffcc00;
+$blue         :#5382B0;
+$dark-blue    :#3e5c7d;
+$yellow       :#ffeda4;
+$grey         :#5f5954;
+$light-grey   :#b1b1b4;
+$maroon       :#a45c3e;
+$black        :#000000;
+$white        :#ffffff;
+$dark-grey    :#353535;
+
+$headFont : 'TradeGothic-Condensed', Tahoma, sans-serif;
+$bodyFont : 'Lato', Tahoma, sans-serif;
