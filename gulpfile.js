@@ -4,6 +4,7 @@ var gulp = require('gulp'),
     connect = require('gulp-connect'),
     //uglify = require('gulp-uglify'),
     watch = require('gulp-watch'),
+    fileinclude = require('gulp-file-include'),
     concat = require('gulp-concat');
 
 
@@ -40,6 +41,10 @@ var config = {
             ],
             outputFile: 'site.css',
             dest: "components/output/"
+        },
+        html: {
+            templates: 'components/templates'
+
         }
     }
 };
@@ -79,6 +84,15 @@ gulp.task('javascript', function() {
         .pipe(connect.reload());
 });
 
+gulp.task('fileinclude', function() {
+    gulp.src(config.paths.html.templates + '/welcome.html')
+        .pipe(fileinclude({
+            prefix: '@@',
+            basepath: '@file'
+        }))
+        .pipe(gulp.dest(liveOutputDir))
+        .pipe(connect.reload());
+});
 //gulp.task('html', function() {
 //    gulp.src('builds/development/*.html')
 //        .pipe(gulpif(env === 'production', minifyHTML()))
@@ -88,7 +102,7 @@ gulp.task('javascript', function() {
 // Watch Files For Changes
 gulp.task('watch', function() {
     gulp.watch(config.paths.javascript.src, ['javascript']);
-    //gulp.watch('*.html');
+    gulp.watch('components/templates/*.html', ['fileinclude']);
     gulp.watch('components/css/sass/*.scss', ['sass']);
     gulp.watch('components/output/*.css', ['styles']);
 });
@@ -100,4 +114,4 @@ gulp.task('connect', function() {
         livereload: true
     });
 });
-gulp.task('default', ['sass', 'styles', 'javascript','connect','watch']);
+gulp.task('default', ['sass', 'styles', 'javascript', 'fileinclude', 'connect','watch']);
