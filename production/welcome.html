@@ -17,17 +17,10 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <!-- CSS -->
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/site.css" type="text/css" media="all" />
     <!--<link rel="stylesheet" href="css/print.css" type="text/css" media="print" /> -->
 
-    <!--[if IE 9]>
-    <link rel="stylesheet" href="css/site-ie9.css" type="text/css" media="all" />
-    <script src="js/site-ie9.js"></script>
-    <![endif]-->
-    <!--[if IE 8]>
-    <link rel="stylesheet" href="css/site-ie8.css" type="text/css" media="all" />
-    <script src="js/site-ie8.js"></script>
-    <![endif]-->
     <script src="js/site.js"></script>
 
     <noscript>
@@ -38,7 +31,7 @@
 </head>
 
 <body class="fs-grid shifter" id="top">
-<div id="container">
+<section id="container">
 
 
 
@@ -50,23 +43,21 @@
                         <a href="http://www.uiowa.edu/"><img src="images/ui-logo.png" class="ui-logo" alt="The University of Iowa"></a>
                     </div>
 
-                    <a href="#"><img src="images/cob-logo.png" alt="Tippie College of Business" class="logo"></a>
+                    <a href="http://tippie.uiowa.edu"><img src="images/cob-logo.png" alt="Tippie College of Business" class="logo"></a>
 
                 </div>
             </div>
 
-
-            <nav id="navigation" role="navigation" class="fixed-header" aria-label="Main menu">
+            <h5 id="nav_handle_1" class="navigation-handle">Navigation</h5>
+            <nav id="navigation" class="navigation" role="navigation" aria-label="Main menu" data-navigation-handle="#nav_handle_1">
 
                 <div class="fs-row">
-                    <div class="fs-cell all-full fs-md-8 fs-sm-full">
+                    <div class="fs-cell all-full">
                         <div class="table" role="menubar">
                             <div class="td">
-                                <div class="block">
-                                    <a href="#" class="item" role="menuitem">Home</a>
-                                    <a href="#" class="item" role="menuitem">My Profile</a>
-                                    <a href="#" class="item" role="menuitem">My Application</a>
-                                </div>
+                                <a href="" class="item" role="menuitem">Home</a>
+                                <a href="" class="item" role="menuitem">My Profile</a>
+                                <a href="" class="item" role="menuitem">My Application</a>
                             </div>
                         </div>
                     </div>
@@ -77,7 +68,7 @@
     <section class="page">
         <div class="fs-row">
 
-            <aside class="sidebar fs-lg-3 fs-md-3 fs-xs-full">
+            <div class="fs-cell fs-lg-3 fs-md-3 fs-sm-full fs-xs-full">
                 <div class="widget">
                     <h3>Widget</h3>
                     <div class="widget-content">
@@ -85,9 +76,9 @@
                     </div>
                 </div>
 
-            </aside>
+            </div>
 
-            <div class="desktop-9 fs-md-3 fs-xs-full right max-8 fs-lg-push-4 main">
+            <div class="fs-cell fs-lg-6 fs-md-3 fs-sm-full fs-xs-full main">
                 <h1>Welcome to the Tippie Application Portal</h1>
                 <p>Thank you for starting your application!</p>
                 <p>The Tippie College of Business delivers a national-caliber business education, giving students the skills and global worldview employers want and a future that’s option-rich, whether in Iowa or around the world.</p>
@@ -95,55 +86,97 @@
                 <p>Questions about the application? Contact us.</p>
 
             </div>
+
+            <div class="fs-cell fs-lg-3 fs-md-3 fs-sm-full fs-xs-full">
+                <div class="widget">
+                    <h3>Application Status</h3>
+                    <div class="widget-content">
+                        <a href="#">Application started</a>
+                    </div>
+                </div>
+
+                <div class="widget">
+                    <h3>Application Checklist</h3>
+                    <div class="widget-content">
+                        <ul class="nobullets">
+                            <li>Application</li>
+                            <li>Essays</li>
+                            <li>Application Fee</li>
+                            <li>Official GMAT ot GRE Score</li>
+                            <li>Resume</li>
+                            <li>Officil YOEFL or IELTS Score</li>
+                            <li>Financial Verification</li>
+                            <li>Official Transcripts</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
         </div>
-    </section>
+
 
    <footer id="footer">
-            <section role="navigation">
+        <section role="navigation">
 
-                <div class="fs-row">
-                    <div class="fs-cell fs-sm-full fs-md-full fs-lg-full max-9">
-                        <div class="fs-row">
-                            <div class="fs-cell fs-sm-full fs-md-fourth fs-lg-2 column">
-                                <h4>Programs</h4>
+            <div class="fs-row">
+                <div class="fs-cell fs-sm-full fs-md-full fs-lg-4">
 
-                                <a href="#">Undergraduate Programs</a>
-                                <a href="#">Master's Programs</a>
-                                <a href="#">MBA Programs</a>
-                                <a href="#">Certificates</a>
-                                <a href="#">CIMBA Studdy Abroad</a>
-                                <a href="#">Professional & Executive Education</a>
-                                <a href="#">Entrepreneurship</a>
-                                <a href="#">PhD Programs</a>
-
-                            </div>
-
-                            <div class="fs-cell fs-sm-full fs-md-half fs-lg-4 max-full">
-                                <a href="http://tippie.uiowa.edu/"><img src="images/tcob-logo-transp.png" alt="Tippie College of Business"></a>
-                                <p class="address">Henry B. Tippie College of Business<br>
-                                    108 John Pappajohn Business Building<br>
-                                    Iowa City, IA 52242-1994<br>
-                                    <span class="phone-number">319-335-0862/800-553-4692</span><br>
-                                    <a href="mailto:tippie-business@uiowa.edu">tippie-business@uiowa.edu</a></p>
-                            </div>
+                    <h4>Programs</h4>
+                    <div class="fs-row">
+                        <div class="fs-cell fs-sm-full fs-md-half fs-lg-half column">
+                            <a href="#">Undergraduate Programs</a>
+                            <a href="#">Master's Programs</a>
+                            <a href="#">MBA Programs</a>
+                            <a href="#">Certificates</a>
                         </div>
-                    </div>
-                    <div class="fs-cell fs-sm-full fs-md-full fs-lg-full clear fs-centered" id="postfooter">
-                        <div class="fs-row fs-centered">
-                            <div class="fs-cell fs-sm-full fs-md-full fs-lg-4">
-                                <div class="copyright">&copy; Copyright 2015 Henry B. Tippie College of Business</div>
-                            </div>
+                        <div class="fs-cell fs-sm-full fs-md-half fs-lg-half column">
+                            <a href="#">CIMBA Studdy Abroad</a>
+                            <a href="#">Professional & Executive Education</a>
+                            <a href="#">Entrepreneurship</a>
+                            <a href="#">PhD Programs</a>
                         </div>
                     </div>
                 </div>
 
-            </section>
+                <div class="fs-cell fs-sm-full fs-md-half fs-lg-5 centered">
+                    <div class="footer-logo">
+                        <a href="http://tippie.uiowa.edu/"><img src="images/tcob-logo-transp.png" alt="Tippie College of Business"></a>
+                    </div>
+                </div>
+
+                <div class="fs-cell fs-sm-full fs-md-half fs-lg-3">
+                    <p class="address">Henry B. Tippie College of Business<br>
+                        108 John Pappajohn Business Building<br>
+                        Iowa City, IA 52242-1994<br>
+                        <span class="phone-number">319-335-0862/800-553-4692</span><br>
+                        <a href="mailto:tippie-business@uiowa.edu">tippie-business@uiowa.edu</a>
+                    </p>
+                </div>
+
+            </div>
+
+
+                <div class="fs-row">
+                    <section id="postfooter">
+                    <div class="fs-cell fs-sm-full fs-md-full fs-lg-4">
+                        <div class="copyright">&copy; Copyright 2015 Henry B. Tippie College of Business</div>
+                    </div>
+                    <div class="fs-cell fs-sm-full fs-md-full fs-lg-8">
+                        <a href="http://www.uiowa.edu" target="_blank">University of Iowa</a>
+                        <a href="http://www.uiowa.edu/a-z" target="_blank">UI A to Z Index</a>
+                        <a href="mailto:business-webmaster@uiowa.edu" target="_blank">Comments/Questions</a>
+                        <a href="http://www.uiowa.edu/homepage/online-privacy-information" target="_blank">Privacy Statement</a>
+                    </div>
+                </section>
+            </div>
+        </section>
    </footer>
 
-    </div>
+   </section>
 
 <a href="#0" class="back-top"><i class="fa fa-chevron-up fa-2x"></i></a>
-</div>
+</section>
 
 </body>
 </html>

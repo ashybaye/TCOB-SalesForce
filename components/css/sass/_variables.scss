@@ -27,6 +27,26 @@ $maroon       :#a45c3e;
 $black        :#000000;
 $white        :#ffffff;
 $dark-grey    :#353535;
+$subtle-grey  :#DBDCDE;
 
-$headFont : 'TradeGothic-Condensed', Tahoma, sans-serif;
-$bodyFont : 'Lato', Tahoma, sans-serif;
+// Font weights
+$regular: 400;
+$bold: 600;
+
+// Base Font
+$bodyFont: 'Lato', Tahoma,  sans-serif;
+$bodyFont-weight: $regular;
+$bodyFont-font-size: 15px;
+$bodyFont-line-height: 1.5;
+
+// Trademark Font
+$headFont: 'TradeGothic-Condensed', Tahoma, sans-serif;
+$headFont-weight: $regular;
+$headFont-font-size: 13px;
+$headFont-line-height: 1.5;
+
+// Viewport Vars
+$break-small: 500px;
+$break-medium: 740px;
+$break-medium-large: 980px;
+$break-large: 1220px;

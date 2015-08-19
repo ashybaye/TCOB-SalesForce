@@ -16,12 +16,12 @@ var config = {
         javascript: {
             src:  [
                 'components/javascripts/lib/jquery-1.11.3.min.js',
+                'components/javascripts/lib/modernizr.js',
                 'components/javascripts/lib/core.js',
                 'components/javascripts/lib/mediaquery.js',
                 'components/javascripts/lib/swap.js',
                 'components/javascripts/lib/touch.js',
                 'components/javascripts/lib/navigation.js',
-                'components/javascripts/lib/modernizr.js',
                 'components/javascripts/scripts.js'
             ],
             outputFile: 'site.js',
@@ -87,7 +87,7 @@ gulp.task('javascript', function() {
 //});
 // Watch Files For Changes
 gulp.task('watch', function() {
-    //gulp.watch(config.paths.javascript.src + '/*.js', ['javascript']);
+    gulp.watch(config.paths.javascript.src, ['javascript']);
     //gulp.watch('*.html');
     gulp.watch('components/css/sass/*.scss', ['sass']);
     gulp.watch('components/output/*.css', ['styles']);
