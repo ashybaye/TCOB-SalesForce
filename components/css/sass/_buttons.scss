@@ -1,0 +1,232 @@
+.btn, button, input[type="submit"]
+{
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  white-space: nowrap;
+  position: relative;
+  cursor: pointer;
+  padding: 5px 10px 5px 10px;
+}
+
+.btn,
+button,
+input[type="submit"] {
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  margin: 5px 0;
+  border: none !important;
+  border-radius: 3px;
+  overflow: hidden;
+  -webkit-transition: color 0.25s, background-color 0.25s;
+  transition: color 0.25s, background-color 0.25s;
+}
+.no-touch .btn:before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  background-color: rgba(0,0,0,0.1);
+  -webkit-transition: height 0.25s;
+  transition: height 0.25s;
+}
+.no-touch .btn:hover:before {
+  height: 100%;
+}
+.btn span {
+  position: relative;}
+.btn .second-line {
+  position: relative;
+  display: block;
+  font-size: 0.9em;
+  font-style: italic;
+  text-transform: lowercase;
+}
+.btn i {
+  font-size: 1em;
+  line-height: inherit;
+  margin: 0 4px 0 4px;
+}
+.btn:hover i {
+  color:inherit;
+}
+.btn:focus,
+button:focus,
+input[type="submit"]:focus { border: solid 2px red;}
+/* SIZE: tiny */
+.btn.size_tiny,
+input.btn.size_tiny {
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+/* SIZE: small */
+.btn.size_small,
+input.btn.size_small {
+  padding: 8px 26px;
+  font-size: 13px;
+  border-radius: 4px;
+}
+/* SIZE: big */
+.btn.size_big,
+input.btn.size_big {
+  padding: 16px 50px;
+  font-size: 18px;
+}
+/* TYPE: outlined */
+.btn.outlined {
+  background-color: transparent !important;
+}
+/* COLOR: transparent */
+.btn.color_transparent {
+  font-weight: normal;
+  text-transform: none;
+  overflow: visible;
+  padding: 0 2px !important;
+  border: none !important;
+  background: none !important;
+}
+.no-touch .btn.color_transparent:before {
+  display: none;
+}
+.no-touch .btn.color_transparent:hover span {
+  border-bottom: 1px solid;
+}
+/* COLOR: white */
+.btn.color_white,
+a.btn.color_white {
+  background-color: #fff;
+  color: #444;
+}
+.no-touch .btn.color_white:before {
+  background-color: rgba(0,0,0,0.06);
+}
+.no-touch .btn.color_white:hover,
+.no-touch a.btn.color_white:hover {
+  color: #444;
+}
+/* COLOR: white outlined */
+.btn.color_white.outlined,
+a.btn.color_white.outlined {
+  box-shadow: 0 0 0 2px #fff inset;
+  color: #fff;
+}
+.no-touch .btn.color_white.outlined:hover,
+.no-touch a.btn.color_white.outlined:hover {
+  color: #444;
+}
+.btn.color_white.outlined:before {
+  background-color: #fff;
+}
+
+/* COLOR: grey */
+.btn.color_grey {
+  background-color: #666; /* variable */
+  color: #fff;
+}
+.no-touch .btn.color_grey:hover {
+  color: #fff;
+}
+/* COLOR: secondary outlined */
+.btn.color_grey.outlined {
+  box-shadow: 0 0 0 2px #666 inset; /* variable */
+  color: #666; /* variable */
+}
+.no-touch .btn.color_grey.outlined:hover,
+.no-touch .color_alternate .btn.color_grey.outlined:hover {
+  color: #fff;
+}
+.btn.color_grey.outlined:before {
+  background-color: #666; /* variable */
+}
+
+/* COLOR: blue */
+.btn.color_blue {
+  background-color: #4E749E;
+  color: #fff;
+}
+.no-touch .btn.color_blue:hover {
+  color: #fff;
+}
+/* COLOR: blue outlined */
+.btn.color_blue.outlined {
+  box-shadow: 0 0 0 2px #4E749E inset;
+  color: #4E749E;
+}
+.no-touch .btn.color_blue.outlined:hover {
+  color: #fff;
+}
+.btn.color_blue.outlined:before {
+  background-color: #4E749E;
+}
+
+/* COLOR: green */
+.btn.color_green {
+  background-color: #59ba41;
+  color: #fff;
+}
+.no-touch .btn.color_green:hover {
+  color: #fff;
+}
+/* COLOR: green outlined */
+.btn.color_green.outlined {
+  box-shadow: 0 0 0 2px #59ba41 inset;
+  color: #59ba41;
+}
+.no-touch .btn.color_green.outlined:hover {
+  color: #fff;
+}
+.btn.color_green.outlined:before {
+  background-color: #59ba41;
+}
+/* COLOR: yellow */
+.btn.color_yellow {
+  background-color: #FFCC00;
+  color: #353535;
+}
+.btn.color_yellow:before {
+  background-color: rgba(0,0,0,0.06);
+}
+.no-touch .btn.color_yellow:hover, .btn.color_yellow:hover {
+  color:#353535;
+}
+/* COLOR: yellow outlined */
+.btn.color_yellow.outlined {
+  box-shadow: 0 0 0 2px #fac000 inset;
+  color: #fac000;
+}
+.no-touch .btn.color_yellow.outlined:hover {
+  color: #fff;
+}
+.btn.color_yellow.outlined:before {
+  background-color: #fac000;
+}
+
+/* COLOR: maroon */
+.btn.color_maroon {
+  background-color: #A45C3E;
+  color: #fff;
+}
+.no-touch .btn.color_maroon:hover {
+  color: #fff;
+}
+/* COLOR: red outlined */
+.btn.color_maroon.outlined {
+  box-shadow: 0 0 0 2px #A45C3E inset;
+  color: #A45C3E;
+}
+.no-touch .btn.color_maroon.outlined:hover {
+  color: #fff;
+}
+.btn.color_maroon.outlined:before {
+  background-color: #A45C3E;
+}
+@media screen and (max-width: 1220px) and (min-width: 980px) {
+  .btn {font-size: 13px;}}

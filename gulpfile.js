@@ -43,7 +43,12 @@ var config = {
             dest: "components/output/"
         },
         html: {
-            templates: 'components/templates'
+            templates: [
+                'components/templates/welcome.html',
+                'components/templates/login.html',
+                'components/templates/new-app.html',
+                'components/templates/app-interior-link.html'
+            ]
 
         }
     }
@@ -85,7 +90,7 @@ gulp.task('javascript', function() {
 });
 
 gulp.task('fileinclude', function() {
-    gulp.src(config.paths.html.templates + '/welcome.html')
+    gulp.src(config.paths.html.templates)
         .pipe(fileinclude({
             prefix: '@@',
             basepath: '@file'

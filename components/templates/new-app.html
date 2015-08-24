@@ -9,10 +9,10 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
 
     <meta name="keywords" content="Tippie, College of Business" />
-    <meta name="description" content="Log In Screen for SalesForce" />
+    <meta name="description" content="New Applicant Registration Screen for SalesForce" />
     <meta name="author" content="Tippie College of Business" />
 
-    <title>Log In - Tippie Student Portal</title>
+    <title>New Applicant Registration - Tippie Student Portal</title>
 
     @@include('header.tpl.html')
 
@@ -20,26 +20,34 @@
         <div class="fs-row">
 
             <div class="fs-cell fs-lg-half fs-md-half fs-sm-full fs-xs-full">
-                <h1>Applicant Login</h1>
+                <h1>New Applicant Registration</h1>
 
                 <form class="styled-form styled-form-stacked">
                     <fieldset>
+
+                        <label for="firstName">First Name</label>
+                        <input id="firstName" type="text" placeholder="First Name" class="styled-input-full">
+
+                        <label for="lastName">Last Name</label>
+                        <input id="lastName" type="text" placeholder="Last Name" class="styled-input-full">
 
                         <label for="email">Email</label>
                         <input id="email" type="email" placeholder="Email Address" class="styled-input-full">
 
                         <label for="password">Password</label>
                         <input id="password" type="password" placeholder="Password" class="styled-input-half">
-                        <a href="#">Forgot Your Password?</a>
-                        <p><button type="submit" class="btn size_small color_yellow">LOGIN &gt;</button></p>
+
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input id="confirmPassword" type="password" placeholder="Password" class="styled-input-half">
+
+                        <p><button type="submit" class="btn size_small color_yellow">REGISTER &gt;</button></p>
                     </fieldset>
                 </form>
 
             </div>
 
             <div class="fs-cell fs-lg-half fs-md-half fs-sm-full fs-xs-full main">
-                <h1>New user?</h1>
-                <p><a href="#" class="btn size_small color_yellow">Create an account &gt;</a></p>
+
             </div>
 
         </div>

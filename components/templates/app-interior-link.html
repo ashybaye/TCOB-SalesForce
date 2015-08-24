@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="encoding" content="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <meta name="keywords" content="Tippie, College of Business" />
+    <meta name="description" content="Application Screen for SalesForce" />
+    <meta name="author" content="Tippie College of Business" />
+
+    <title>Application - Tippie Student Portal</title>
+
+    @@include('header.tpl.html')
+
+    <section class="page">
+        <div class="fs-row">
+
+            <div class="fs-cell fs-lg-full fs-md-full fs-sm-full fs-xs-full">
+                <h1>Personal Data</h1>
+
+                <form class="styled-form styled-form-aligned">
+                    <p class="styled-form-message">Please complete all the information on this page before proceeding to the "My Application"
+                        tab.</p>
+                    <fieldset>
+
+                        <div class="styled-control-group">
+                            <label for="firstName">First Name</label>
+                            <input id="firstName" type="text" placeholder="First Name" class="styled-input-full">
+                        </div>
+                        <div class="styled-control-group">
+                            <label for="middleName">Middle Name</label>
+                            <input id="middleName" type="text" placeholder="Middle Name" class="styled-input-full">
+                        </div>
+                        <div class="styled-control-group">
+                            <label for="lastName">Last Name</label>
+                            <input id="lastName" type="text" placeholder="Last Name" class="styled-input-full">
+                        </div>
+
+                        <p class="styled-form-message">List other Last Name(s) or Surname(s), if any, that may appear
+                            on transcripts, documents, scores, etc.</p>
+
+                        <div class="styled-control-group">
+                            <label for="otherName">Other Last Name(s) or Surname(s)</label>
+                            <input id="otherName" type="text" placeholder="Other Names" class="styled-input-full">
+                            <a href="#" class="styled-controls styled-form-message-block">Add more</a>
+
+                        </div>
+                    </fieldset>
+
+                    <h1>Citizenship Information</h1>
+
+                    <fieldset>
+                        <div class="styled-control-group">
+                            <label for="citizenship">Country of Citizenship</label>
+                            <input id="citizenship" type="text" placeholder="Citizenship" class="styled-input-full">
+                        </div>
+
+                        <div class="styled-control-group">
+                        <label for="permResident" class="styled-radio">Are you a Permanent resident of the United States?</label>
+
+                            <input id="permResident_yes" name="permResident" type="radio"> Yes &nbsp;
+                            <input id="permResident_no" name="permResident" type="radio"> No
+                            <span class="styled-form-message-inline">If yes, please mail green card to
+                                Admissions.</span>
+
+                        </div>
+
+                        <div class="styled-control-group">
+                            <label for="country">Do you hold citizenship in more than one country?</label>
+                            <input id="country" type="text" placeholder="" class="styled-input-half">
+                        </div>
+
+                        <p><button type="submit" class="btn size_small color_yellow">REGISTER &gt;</button></p>
+                    </fieldset>
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+
+@@include('footer.tpl.html')
+
+</body>
+</html>
