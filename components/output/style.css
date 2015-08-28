@@ -1,9 +1,9 @@
-@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400");
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400");
 @font-face {
   font-family: 'TradeGothic-Condensed';
-  src: url("http://www.tippie.uiowa.edu/includes/fonts/LTe50535.eot");
+  src: url("fonts/LTe50535.eot");
   /* IE9 Compat Modes */
-  src: url("http://www.tippie.uiowa.edu/includes/fonts/LTe50535.eot?#iefix") format("embedded-opentype"), url("http://www.tippie.uiowa.edu/includes/fonts/TradeGothic-Condensed.woff") format("woff"), url("http://www.tippie.uiowa.edu/includes/fonts/TradeGothic-Condensed.ttf") format("truetype"), url("http://www.tippie.uiowa.edu/includes/fonts/TradeGothic-Condensed.svg#svgFontName") format("svg");
+  src: url("fonts/LTe50535.eot?#iefix") format("embedded-opentype"), url("fonts/TradeGothic-Condensed.woff") format("woff"), url("fonts/TradeGothic-Condensed.ttf") format("truetype"), url("fonts/TradeGothic-Condensed.svg#svgFontName") format("svg");
   /* Legacy iOS */
   font-style: normal; }
 
