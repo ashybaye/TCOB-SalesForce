@@ -1,5 +1,5 @@
 var gulp = require('gulp'),
-    //minifyCSS = require('gulp-minify-css'),
+    minifyCSS = require('gulp-minify-css'),
     sass = require('gulp-sass'),
     connect = require('gulp-connect'),
     //uglify = require('gulp-uglify'),
@@ -8,9 +8,7 @@ var gulp = require('gulp'),
     concat = require('gulp-concat');
 
 
-var //sassStyle = 'compact',
-    liveOutputDir = 'production/';
-
+var liveOutputDir = 'production/';
 
 var config = {
     paths: {
@@ -53,18 +51,6 @@ var config = {
         }
     }
 };
-//sassSources = ['components/sass/style.scss'];
-//htmlSources = [outputDir + '*.html'];
-//gulp.task('js', function() {
-//    gulp.src(jsSources)
-//        .pipe(concat('script.js'))
-//        .pipe(browserify())
-//        .pipe(gulpif(env === 'production', uglify()))
-//        .pipe(gulp.dest(outputDir + 'js'))
-//        .pipe(connect.reload())
-//
-//});
-
 
 gulp.task('sass', function() {
     gulp.src(config.paths.sass.src)
@@ -77,6 +63,7 @@ gulp.task('styles', function() {
     gulp.src(config.paths.css.src)
         .pipe(concat(config.paths.css.outputFile))
         .pipe(gulp.dest(config.paths.css.dest))
+        .pipe(minifyCSS())
         .pipe(gulp.dest(liveOutputDir + 'css/'))
         .pipe(connect.reload());
 });
@@ -98,12 +85,7 @@ gulp.task('fileinclude', function() {
         .pipe(gulp.dest(liveOutputDir))
         .pipe(connect.reload());
 });
-//gulp.task('html', function() {
-//    gulp.src('builds/development/*.html')
-//        .pipe(gulpif(env === 'production', minifyHTML()))
-//        .pipe(gulpif(env === 'production', gulp.dest(outputDir)))
-//        .pipe(connect.reload())
-//});
+
 // Watch Files For Changes
 gulp.task('watch', function() {
     gulp.watch(config.paths.javascript.src, ['javascript']);
