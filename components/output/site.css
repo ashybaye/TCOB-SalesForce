@@ -1293,7 +1293,7 @@ th {
 	 * @class
 	 * @name .fs-navigation-element
 	 * @type element
-	 * @description Target elmement
+	 * @description Target element
 	 */
 /**
 	 * @class
@@ -1498,7 +1498,7 @@ th {
 		 * @class
 		 * @name .fs-navigation-push-content.fs-navigation-animated
 		 * @type modifier
-		 * @description Indicates animted state
+		 * @description Indicates animated state
 		 */
   /**
 		 * @class
@@ -2188,6 +2188,7 @@ h2 a.jumplink:after {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /*noinspection CssNoGenericFontName*/
   font-family: FontAwesome;
   font-style: normal;
   line-height: 1;
@@ -2311,7 +2312,8 @@ h2 a.jumplink:after {
   background-repeat: repeat; }
   #footer .address {
     color: #ffffff;
-    margin-top: 50px; }
+    margin-bottom: 5px;
+    margin-top: 65px; }
     @media screen and (max-width: 740px) {
       #footer .address {
         margin-top: 10px; } }
@@ -2335,7 +2337,7 @@ h2 a.jumplink:after {
   #footer .phone-number a {
     color: #ffffff; }
   #footer .footer-logo {
-    margin: 40px auto 20px;
+    margin: 10px auto 0px auto;
     text-align: center; }
     @media screen and (max-width: 740px) {
       #footer .footer-logo {
@@ -2357,7 +2359,7 @@ h2 a.jumplink:after {
     color: #ffcc00; }
   #postfooter .copyright {
     display: inline-block;
-    text-align: right;
+    text-align: left;
     color: #b1b1b4;
     margin-bottom: 15px; }
     @media screen and (max-width: 740px) {
